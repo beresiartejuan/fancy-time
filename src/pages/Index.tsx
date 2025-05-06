@@ -5,12 +5,13 @@ import Clock from "@/components/Clock";
 import Timer from "@/components/Timer";
 import Settings from "@/components/Settings";
 import { useToast } from "@/components/ui/use-toast";
-import { useIsMobile } from "@/hooks/use-mobile";
+//import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
   const { settings, loading, updateThemeColor, toggle24HourFormat } = useTimeSettings();
   const { toast } = useToast();
-  const isMobile = useIsMobile();
+  // const isMobile = useIsMobile();
+  // Este hook puede servir en un futuro
   
   useEffect(() => {
     // Request notification permission for timer alerts
